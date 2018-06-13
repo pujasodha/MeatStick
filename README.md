@@ -1,8 +1,8 @@
-#Meat Stick Web Page 
+# Meat Stick Web Page 
 
 ___
 
-##Authors 
+## Authors 
 
 Puja Sodha 
 
@@ -14,13 +14,13 @@ John De Jesus
 
 ___
 
-##Purpose
+## Purpose
 
 Creating a web page to sell the Meat Sick Product. 
 
 ___
 
-##About the Product 
+## About the Product 
 
 * 【TRUE Wireless】No wires! The only TRUE Wireless Smart Meat Thermometer on Amazon.com. Insert The MeatStick into your meat and get your cook on. You don't need to worry about The MeatStick burning out.
 
