@@ -1,6 +1,6 @@
 #Meat Stick Web Page 
 
----
+___
 
 ##Authors 
 
@@ -12,13 +12,13 @@ Javier Leon
 
 John De Jesus
 
----
+___
 
 ##Purpose
 
 Creating a web page to sell the Meat Sick Product. 
 
----
+___
 
 ##About the Product 
 
