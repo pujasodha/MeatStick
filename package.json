@@ -29,10 +29,7 @@
     "morgan": "^1.9.0",
     "nonce": "^1.0.4",
     "react-shopify": "0.4.0",
-<<<<<<< HEAD
-=======
     "request": "^2.87.0",
->>>>>>> master
     "request-promise": "^4.2.2"
   }
 }
