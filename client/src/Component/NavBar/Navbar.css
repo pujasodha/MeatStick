@@ -1,32 +1,35 @@
 nav {
     background-color: #282828;
-    color: #F8F8F8;
     height: 50px;
     background-size: contain;
     letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: #F8F8F8;
+}
+
+li {
+    left: 23%;
+    position: relative;
+    margin-bottom: 10px;
 }
 
 #logo {
     width: 40px;
     height: 40px;
     float: left;
-    margin-left: 325px;
+    left: 20%;
     margin-top: 5px;
+    position: relative;
 }
 
 #bag {
     width: 35px;
     height: 35px;
-    float: right;
-    margin-right: 325px;
-    margin-top: -26px;
-}
-
-#navDiv {
-    width: 900px;
-    padding-top: 15px;
-    margin-right: 0px;
-    margin-left: 340px;
+    left: 80%;
+    margin-top: 5px;
 }
 
 .navText {
