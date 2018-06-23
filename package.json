@@ -23,6 +23,7 @@
     "express": "^4.15.4",
     "if-env": "^1.0.4",
     "passport": "^0.4.0",
+    "react-flexbox-grid": "^2.1.2",
     "react-materialize": "^2.3.1"
   }
 }
