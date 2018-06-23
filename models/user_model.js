@@ -16,7 +16,7 @@ var UserSchema = new Schema({
     required: true
   },
     
-  phonenumber: {
+  phoneNumber: {
     type: String,
     required: true
   },
