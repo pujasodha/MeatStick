@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "myfont";
+    src: url("../../Images/fonts/NexaLight.otf")
+}
+
 .fullImageDiv {
-    height: 600px;
+    height: 800px;
     width: 100%;
     background-color: #E8E8E8;
     justify-content: center;
@@ -12,13 +17,22 @@
 .fullImagePic {
     height: 300px;
     width: 1000px;
-    margin-top: 200px;
+    margin-top: 150px;
     background-color: #E8E8E8;
+}
+
+.description {
+    color: black;
+    font-family: "myfont";
+    position: absolute;
+    top: 315px;
+    left: 700px;
+    font-size: 40px;
 }
 
 #title {
     width: 900px;
     height: 230px;
     position: absolute;
-    top: 130px;
+    top: 180px;
 }
