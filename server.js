@@ -53,6 +53,31 @@ app.get('/', (req, res) => {
   res.send("It Works!")
 });
 
+
+
+/// userlogin page
+
+app.post('/userinfo:post', (req,res) =>{
+  var userData = req.body;
+
+
+  db.User.create(userData)
+
+  
+    .then(function(dbUser){
+      console.log(dbUser)
+    })
+    .catch(function(err){
+      return res.json(err)
+    })
+  
+  console.log(userData)
+  console.log("works")
+
+
+})
+
+
 //Install Route
 app.get('/shopify', (req, res) => {
   const shop = req.query.shop;
