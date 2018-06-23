@@ -1,0 +1,16 @@
+.fullImageDiv {
+    height: 600px;
+    width: 100%;
+    background-color: #E8E8E8;
+    /* justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;  */
+}
+
+.fullImagePic {
+    height: 300px;
+    width: 1000px;
+    margin-top: 200px;
+    background-color: #E8E8E8;
+}
