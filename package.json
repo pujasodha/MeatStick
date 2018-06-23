@@ -28,7 +28,7 @@
     "mongoose": "^5.1.5",
     "morgan": "^1.9.0",
     "nonce": "^1.0.4",
-    "react-shopify": "0.4.0",
+    "npm": "^6.1.0",
     "request": "^2.87.0",
     "request-promise": "^4.2.2"
   }
