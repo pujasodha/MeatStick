@@ -2,10 +2,11 @@
     height: 600px;
     width: 100%;
     background-color: #E8E8E8;
-    /* justify-content: center;
+    justify-content: center;
     align-items: center;
     display: flex;
-    text-align: center;  */
+    text-align: center; 
+    overflow: hidden;
 }
 
 .fullImagePic {
@@ -13,4 +14,11 @@
     width: 1000px;
     margin-top: 200px;
     background-color: #E8E8E8;
+}
+
+#title {
+    width: 900px;
+    height: 230px;
+    position: absolute;
+    top: 130px;
 }
