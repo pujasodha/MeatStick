@@ -13,8 +13,8 @@ const request = require('request-promise');
 const apiKey = process.env.SHOPIFY_API_KEY;
 // console.log(apiKey)
 const apiSecret = process.env.SHOPIFY_API_SECRET;
-const scopes = 'read_products';
-const forwardingAddress = `http://b3a67b71.ngrok.io`
+const scopes = 'write_orders, read_customers';
+const forwardingAddress = `https://f0fda354.ngrok.io`
 const app = express();
 
 var axios = require("axios");
@@ -141,6 +141,7 @@ app.get('/shopify/callback', (req, res) => {
     
     request.post(accessTokenRequestUrl, { json: accessTokenPayload })
     .then((accessTokenResponse) => {
+      console.log(accessTokenResponse)
       const accessToken = accessTokenResponse.access_token;
     
       const shopRequestUrl = 'https://' + shop + '/admin/shop.json';
@@ -157,6 +158,7 @@ app.get('/shopify/callback', (req, res) => {
       });
     })
     .catch((error) => {
+      console.log(error)
       res.status(error.statusCode).send(error.error.error_description);
     });
   } else {
