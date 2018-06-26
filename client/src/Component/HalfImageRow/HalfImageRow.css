@@ -1,6 +1,13 @@
 .halfImagePic {
     height: 600px;
-    width: 800px;
+    width: 850px;
+}
+
+#halfImagePic2 {
+    height: 600px;
+    width: 650px;
+    padding-left: 80px;
+    padding-top: 30px;
 }
 
 .halfTitle {
@@ -10,8 +17,22 @@
     color: #F8F8F8;
 }
 
+#halfTitle2 {
+    margin-left: 280px;
+}
+
 .halfImageDiv {
     margin: 15px;
+}
+
+#halfImageDiv2 {
+    margin: 15px;
+    background-color: #696969;
+    width: 830px;
+    height: 600px;
+    margin-right: 0px;
+    margin-left: 15px;
+    margin-bottom: 18px;
 }
 
 .halfDiv {
@@ -20,5 +41,6 @@
     display: flex;
     text-align: center; 
     overflow: hidden;
+    padding: 0px;
 }
 

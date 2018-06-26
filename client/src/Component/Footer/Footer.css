@@ -1,6 +1,6 @@
 #footerDiv {
     background-color: rgb(241, 241, 241);
-    height: 300px;
+    height: 280px;
     margin-top: -20px;
     margin-bottom: 0px;
 }
@@ -12,20 +12,21 @@
     border-bottom: solid .5px rgb(204, 204, 204);
     height: 40px;
     color: rgb(170, 170, 170);
-    font-size: 12px;
+    font-size: 11px;
 }
 
 #copyRightDiv {
     color: rgb(138, 138, 138);
     display: inline;
     border-top:  solid .5px rgb(204, 204, 204);
-    padding-top: 15px;
+    padding-top: 6px;
 }
 
 #copyrightLine {
     width:400px;
     margin: 0px;
-    margin-right: 40px;
+    margin-right: 80px;
+    font-size: 12px;
 }
 
 .linkItem {
@@ -45,6 +46,10 @@
     margin-right: 15px;
     border-right:   solid 1px rgb(204, 204, 204);
     padding-right: 15px;
+}
+
+#lastPolicyList {
+    border-right: none;
 }
 
 h3 {

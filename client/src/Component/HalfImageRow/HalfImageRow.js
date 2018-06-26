@@ -1,7 +1,7 @@
 import React from "react";
 import "./HalfImageRow.css";
 import AppPic from "../../Images/app.png";
-import BBQPic from "../../Images/BBQSuper.jpg";
+import BBQPic from "../../Images/BBQSuperdark.png";
 
 const HalfImageRow = props => 
 <div class="row">
@@ -12,10 +12,12 @@ const HalfImageRow = props =>
 </a>
 </div>
 <div class="col-sm-6 halfDiv">
-<a href="#" class="halfImageDiv" id="halfImageDiv2">
-<h1 class="halfTitle">BBQ Set</h1>
+<div class="halfImageDiv" id="halfImageDiv2">
+<a href="#" class="halfImageDiv" id="">
+<h1 class="halfTitle" id="halfTitle2">BBQ Set</h1>
     <img class="halfImagePic" id="halfImagePic2" src={ BBQPic }/>
 </a>
+</div>
 </div>
 </div>
 

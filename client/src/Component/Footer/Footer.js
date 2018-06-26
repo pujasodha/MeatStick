@@ -37,7 +37,7 @@ const Footer = props =>
                 <span id="copyrightLine">Copyright &copy; 2017 The MeatStick. All rights reserved.</span>
                 <a class="policyList">Policy</a>
                 <a class="policyList">Terms of Use</a>
-                <a class="policyList">Sales and Refunds</a>
+                <a class="policyList" id="lastPolicyList">Sales and Refunds</a>
             </div>
             <div class="col-sm-3"></div>
         </div>
