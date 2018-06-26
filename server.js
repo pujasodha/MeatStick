@@ -50,19 +50,22 @@ mongoose.connect(MONGODB_URI);
 
 
 app.get('/', (req, res) => {
+
   res.send("It Works!")
+  
 });
 
 
 
 /// userlogin page
 
-app.post('/userinfo:post', (req,res) =>{
+app.post('/userinfo', (req,res) =>{
+  console.log("hi")
   var userData = req.body;
 
-
+// creates new user info
   db.User.create(userData)
-
+    
   
     .then(function(dbUser){
       console.log(dbUser)

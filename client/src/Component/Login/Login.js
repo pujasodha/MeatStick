@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Login.css';
-
+import axios from 'axios';
 
 class Login extends Component {
     state = {
@@ -10,6 +10,23 @@ class Login extends Component {
         address: ""    
     }
    
+
+    handleSubmit = event => {
+
+        event.preventDefault()
+
+        axios.post("/userinfo",{
+            name:this.state.name,
+            email:this.state.email,
+            phoneNumber:this.state.phoneNumber,
+            address:this.state.address
+        }).then(function(res){
+            console.log(res)
+        }).catch(function(e){
+            console.log(e)
+        })
+
+    }
     handleInputChange = event => {
         // Getting the value and name of the input which triggered the change.
         let value = event.target.value;
@@ -19,7 +36,7 @@ class Login extends Component {
            [name]: value
          });
       };
-
+    
     render() {
         return (
             <div className='Login'>
@@ -55,7 +72,9 @@ class Login extends Component {
                                         <button 
                                             className="btn btn-large btn-register waves-effect waves-light" 
                                             type="submit" 
-                                            name="action">Register
+                                            name="action"
+                                            onClick= {this.handleSubmit}
+                                            >Register
                                         
                                         </button>
                                     </div>
