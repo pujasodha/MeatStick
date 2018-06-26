@@ -1,0 +1,17 @@
+#footerDiv {
+    background-color: rgb(226, 226, 226);
+    height: 500px;
+    margin-top: -20px;
+}
+
+#disclaimerDiv {
+    float: left;
+    text-align: left;
+    padding-left: 20px;
+    border-bottom: solid 1px black;
+    height: 40px;
+}
+
+#copyRightDiv {
+    
+}
