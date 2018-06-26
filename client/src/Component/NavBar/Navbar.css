@@ -1,0 +1,39 @@
+nav {
+    background-color: #282828;
+    height: 50px;
+    background-size: contain;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    left: 23%;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: -8px;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+    float: left;
+    left: 22%;
+    margin-top: 5px;
+    position: relative;
+}
+
+#bag {
+    width: 35px;
+    height: 35px;
+    left: 85%;
+    margin-top: 6px;
+}
+
+.navText {
+    margin-left: 55px;
+    margin-right: 45px;
+    color: #F8F8F8;
+}

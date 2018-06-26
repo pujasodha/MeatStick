@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "myfont2";
+    src: url("../../Images/fonts/NexaBold.otf")
+}
+
+#fullImageDiv2 {
+    margin-top: 15px;
+}
+
+.fullImagePic2 {
+    height: 900px;
+    width: 900px;
+    margin-top: 200px;
+    background-color: rgb(248, 245, 245);
+}
+
+.header {
+    color: black;
+    font-family: "myfont2";
+    position: absolute;
+    top: 1000px;
+    left: 700px;
+    font-size: 110px;
+}
+
+#yellow {
+    color: #fd9626;
+}
