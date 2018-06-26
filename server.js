@@ -53,34 +53,29 @@ mongoose.connect(MONGODB_URI);
 // });
 
 
+app.get('/', (req, res) => {
+  res.send("It Works!")
+});
 
 
 
 
+app.post('/userinfo:post', (req,res) =>{
+  var userData = req.body;
 
-//Install Route
-// app.get('/shopify', (req, res) => {
-//   const shop = req.query.shop;
-//   if (shop) {
-//     const state = nonce();
-//     const redirectUri = forwardingAddress + '/shopify/callback';
-//     const installUrl = 'https://' + shop +
-//       '/admin/oauth/authorize?client_id=' + apiKey +
-//       '&scope=' + scopes +
-//       '&state=' + state +
-//       '&redirect_uri=' + redirectUri;
 
-//     res.cookie('state', state);
-//     res.redirect(installUrl);
-//   } else {
-//     return res.status(400).send('Missing shop parameter. Please add ?shop=your-development-shop.myshopify.com to your request');
-//   }
-// });
+  db.User.create(userData)
 
-//Callback Route 
-// app.get('/shopify/callback', (req, res) => {
-//   const { shop, hmac, code, state } = req.query;
-//   const stateCookie = cookie.parse(req.headers.cookie).state;
+  
+    .then(function(dbUser){
+      console.log(dbUser)
+    })
+    .catch(function(err){
+      return res.json(err)
+    })
+  
+  console.log(userData)
+  console.log("works")
 
 //   if (state !== stateCookie) {
 //     return res.status(403).send('Request origin cannot be verified');

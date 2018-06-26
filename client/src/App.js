@@ -1,18 +1,23 @@
 import React, { Component } from "react";
 import "./App.css";
-import Login from "./Component/Login"
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import Navbar from "./Component/NavBar";
+import Fullimage from "./Component/Fullimage";
+import ProbePic from "./Images/DSC_9455.png";
+import WifiBridge from "./Images/Bridgecopy.png";
+import Fullimage2 from "./Component/Fullimage2";
+import HalfImageRow from "./Component/HalfImageRow";
+import Footer from "./Component/Footer";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React</h2>
-        </div>
-       
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <Navbar></Navbar>
+      <Fullimage>{ProbePic}</Fullimage>
+      <Fullimage2>{WifiBridge}</Fullimage2>
+      <HalfImageRow></HalfImageRow>
+      <Footer></Footer>
       </div>
     );
   }
