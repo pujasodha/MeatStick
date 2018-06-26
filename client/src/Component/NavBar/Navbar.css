@@ -7,7 +7,6 @@ nav {
 
 a {
     text-decoration: none;
-    color: #F8F8F8;
 }
 
 li {
@@ -36,4 +35,5 @@ li {
 .navText {
     margin-left: 55px;
     margin-right: 45px;
+    color: #F8F8F8;
 }

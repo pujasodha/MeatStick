@@ -6,6 +6,8 @@
 .halfTitle {
     position: absolute;
     margin-left: 180px;
+    text-decoration: none;
+    color: #F8F8F8;
 }
 
 .halfImageDiv {
@@ -19,3 +21,4 @@
     text-align: center; 
     overflow: hidden;
 }
+
