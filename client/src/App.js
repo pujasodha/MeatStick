@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import Main from "./Pages/Main"
 import Navbar from "./Component/NavBar"
 import Footer from "./Component/Footer"
+import Support from "./Pages/Support/Support";
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <Navbar />
           <Switch>
             <Route exact path="/" component = {Main} />
+            <Route exact path="/Support" component = {Support} />
           </Switch>
         <Footer />
         </div>

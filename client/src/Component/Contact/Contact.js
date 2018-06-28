@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import './Login.css';
+import './Contact.css';
 import axios from 'axios';
 
-class Login extends Component {
+class Contact extends Component {
     state = {
         name : "",
         email : "",
         phoneNumber : "",
-        address: ""    
+        Message: ""    
     }
    
 
@@ -15,21 +15,21 @@ class Login extends Component {
 
         event.preventDefault()
 
-        axios.post("/userinfo",{
-            name:this.state.name,
-            email:this.state.email,
-            phoneNumber:this.state.phoneNumber,
-            address:this.state.address
-        }).then(function(res){
-            console.log(res)
-        }).catch(function(e){
-            console.log(e)
-        })
+        // axios.post("/userinfo",{
+        //     name:this.state.name,
+        //     email:this.state.email,
+        //     phoneNumber:this.state.phoneNumber,
+        //     address:this.state.address
+        // }).then(function(res){
+        //     console.log(res)
+        // }).catch(function(e){
+        //     console.log(e)
+        // })
         this.setState({
         name:"",
         email:"",
         phoneNumber:"",
-        address:""
+        message:""
         })
 
 
@@ -46,7 +46,7 @@ class Login extends Component {
     
     render() {
         return (
-            <div className='Login'>
+            <div className='Contact'>
                 <div className="container">
                     <div className="row">
                         <form className="col s12" id="reg-form">
@@ -69,7 +69,17 @@ class Login extends Component {
                                     </div>
                                     <div className="row">
                                         <div className="input-field col s12">
-                                            <input name="address" id="address" type="Text" className="validate" minlength="3" required  placeholder="Address" value = {this.state.address} onChange = {this.handleInputChange} />
+                                            <textarea 
+                                            name="message" 
+                                            id="message" 
+                                            type="Text" 
+                                            className="validate" 
+                                            minlength="3" 
+                                            required  
+                                            placeholder="message" 
+                                            value = {this.state.message} 
+                                            onChange = {this.handleInputChange}
+                                            rows="10" cols="30" />
                                              
                                             
                                         </div>
@@ -81,8 +91,7 @@ class Login extends Component {
                                             type="submit" 
                                             name="action"
                                             onClick= {this.handleSubmit}
-                                            >Register
-                                        
+                                            >Send
                                         </button>
                                     </div>
                                 </div>
@@ -97,4 +106,4 @@ class Login extends Component {
     }
 }
 
-export default Login
+export default Contact
