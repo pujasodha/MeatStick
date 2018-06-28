@@ -15,6 +15,8 @@ class Contact extends Component {
 
         event.preventDefault()
 
+
+
         // axios.post("/userinfo",{
         //     name:this.state.name,
         //     email:this.state.email,
@@ -25,6 +27,8 @@ class Contact extends Component {
         // }).catch(function(e){
         //     console.log(e)
         // })
+        
+
         this.setState({
         name:"",
         email:"",
@@ -34,6 +38,11 @@ class Contact extends Component {
 
 
     }
+
+    sendEmail = event =>{
+        
+    }
+
     handleInputChange = event => {
         // Getting the value and name of the input which triggered the change.
         let value = event.target.value;
