@@ -7,7 +7,7 @@ class Contact extends Component {
         name : "",
         email : "",
         phoneNumber : "",
-        Message: ""    
+        message: ""    
     }
    
 
@@ -17,16 +17,16 @@ class Contact extends Component {
 
 
 
-        // axios.post("/userinfo",{
-        //     name:this.state.name,
-        //     email:this.state.email,
-        //     phoneNumber:this.state.phoneNumber,
-        //     address:this.state.address
-        // }).then(function(res){
-        //     console.log(res)
-        // }).catch(function(e){
-        //     console.log(e)
-        // })
+        axios.post("/mail",{
+            name:this.state.name,
+            email:this.state.email,
+            phoneNumber:this.state.phoneNumber,
+            message:this.state.message
+        }).then(function(res){
+            console.log(res)
+        }).catch(function(e){
+            console.log(e)
+        })
         
 
         this.setState({
@@ -39,9 +39,7 @@ class Contact extends Component {
 
     }
 
-    sendEmail = event =>{
-        
-    }
+
 
     handleInputChange = event => {
         // Getting the value and name of the input which triggered the change.

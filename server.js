@@ -7,6 +7,7 @@ const cookie = require('cookie');
 const nonce = require('nonce')();
 const querystring = require('querystring');
 const request = require('request-promise');
+var nodemailer = require('nodemailer');
 // const reactShopify = require('react-shopify')
 
 
@@ -185,6 +186,40 @@ app.get('/shopify/callback', (req, res) => {
     }
   ) 
   
+
+  // Email support page 
+  app.post("/mail", (req,res)=>{
+
+   var data= "<p> name:"+req.body.name+"</p> ";
+   data+="<p> Email:"+req.body.Email+"</p> "
+   data+="<p> Phone:"+req.body.phoneNumber+"</p> "
+   data+="<p> Message:"+req.body.message+"</p> "
+
+    
+
+    var transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+             user: 'themeatstickthermometer123@gmail.com',
+             pass: process.env.EMAIL_PASS
+         }
+     });
+
+     const mailOptions = {
+      from: 'themeatstickthermometer123@gmail.com', // sender address
+      to: 'jdeje002@gmail.com', // Add clients Email
+      subject: 'MEAT STICK SUPPORT', // Subject line
+      html:data // plain text body
+      
+    };
+    transporter.sendMail(mailOptions, function (err, info) {
+      if(err)
+        console.log(err)
+      else
+        console.log(info);
+   });
+  })
+
   
   app.listen(PORT, () => {
     console.log(`🌎 ==> Server now on port ${PORT}!`);
