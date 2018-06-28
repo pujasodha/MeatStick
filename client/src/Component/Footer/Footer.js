@@ -20,11 +20,10 @@ const Footer = props =>
                     <li class="listItem"><a class="linkItem">MeatStick App</a></li>
                 </ul>
             </div>
-            <div class="col-sm-3 list">
+            <div class="col-sm-3 list" id="moreCol">
                 <h3>More About MeatStick</h3>
                 <ul class="list">
                     <li class="listItem"><a class="linkItem">About</a></li>
-                    <li class="listItem"><a class="linkItem">FAQ</a></li>
                     <li class="listItem"><a class="linkItem">Support</a></li>
                     <li class="listItem"><a class="linkItem">Social Media</a></li>
                 </ul>

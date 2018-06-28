@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
-//import { Grid, Row, Col } from 'react-flexbox-grid';
 import Main from "./Pages/Main"
 import Navbar from "./Component/NavBar"
 import Footer from "./Component/Footer"

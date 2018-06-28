@@ -1,6 +1,6 @@
 #footerDiv {
     background-color: rgb(241, 241, 241);
-    height: 260px;
+    height: 220px;
     margin-top: -20px;
     margin-bottom: 0px;
 }
@@ -20,7 +20,7 @@
     color: rgb(138, 138, 138);
     display: inline;
     border-top:  solid .5px rgb(204, 204, 204);
-    padding-top: 6px;
+    padding-top: 2px;
     text-align: left;
     padding-left: 0px;
 }
@@ -28,7 +28,7 @@
 #copyrightLine {
     width:400px;
     margin: 0px;
-    margin-right: 80px;
+    margin-right: 260px;
     font-size: 12px;
 }
 
@@ -40,13 +40,11 @@
 
 .listItem {
     width: 225px;
-    text-align: left;
-    float: left;
     left: 0px;
 }
 
 .policyList {
-    color: rgb(138, 138, 138);
+    color: rgb(114, 114, 114);
     font-size: 12px;
     text-decoration: none;
     margin-right: 15px;
@@ -61,6 +59,7 @@
 h3 {
     color: rgb(114, 114, 114);
     font-size: 18px;
+    margin-top: 15px;
 }
 
 .row {
@@ -71,4 +70,8 @@ h3 {
 .list {
     text-align: left;
     padding-left: 0px;
+}
+
+#moreCol {
+    margin-left: 25px;
 }
