@@ -28,8 +28,9 @@ li {
 #bag {
     width: 35px;
     height: 35px;
-    left: 85%;
-    margin-top: 6px;
+    left: 25%;
+    margin-top: 6px; 
+    position: relative;
 }
 
 .navText {
