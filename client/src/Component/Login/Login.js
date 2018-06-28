@@ -25,6 +25,13 @@ class Login extends Component {
         }).catch(function(e){
             console.log(e)
         })
+        this.setState({
+        name:"",
+        email:"",
+        phoneNumber:"",
+        address:""
+        })
+
 
     }
     handleInputChange = event => {

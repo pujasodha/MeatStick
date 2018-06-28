@@ -13,8 +13,9 @@ const request = require('request-promise');
 const apiKey = process.env.SHOPIFY_API_KEY;
 // console.log(apiKey)
 const apiSecret = process.env.SHOPIFY_API_SECRET;
+const access_token = process.env.ACCESS_TOKEN;
 const scopes = 'write_orders, read_customers';
-const forwardingAddress = `https://f0fda354.ngrok.io`
+const forwardingAddress = `https://658f5de1.ngrok.io`
 const app = express();
 
 var axios = require("axios");
@@ -47,41 +48,12 @@ mongoose.connect(MONGODB_URI);
 // });
 
 //Shopify stuff
-
-
 app.get('/', (req, res) => {
-
   res.send("It Works!")
-  
 });
 
 
-
-/// userlogin page
-
-app.post('/userinfo', (req,res) =>{
-  console.log("hi")
-  var userData = req.body;
-
-// creates new user info
-  db.User.create(userData)
-    
-  
-    .then(function(dbUser){
-      console.log(dbUser)
-    })
-    .catch(function(err){
-      return res.json(err)
-    })
-  
-  console.log(userData)
-  console.log("works")
-
-
-})
-
-
-//Install Route
+//Install Function 
 app.get('/shopify', (req, res) => {
   const shop = req.query.shop;
   if (shop) {
@@ -100,7 +72,8 @@ app.get('/shopify', (req, res) => {
   }
 });
 
-//Callback Route 
+
+//callback function
 app.get('/shopify/callback', (req, res) => {
   const { shop, hmac, code, state } = req.query;
   const stateCookie = cookie.parse(req.headers.cookie).state;
@@ -135,35 +108,35 @@ app.get('/shopify/callback', (req, res) => {
       return res.status(400).send('HMAC validation failed');
     }
 
+    // DONE: Exchange temporary code for a permanent access token
     const accessTokenRequestUrl = 'https://' + shop + '/admin/oauth/access_token';
     const accessTokenPayload = {
       client_id: apiKey,
       client_secret: apiSecret,
       code,
     };
-    
+
     request.post(accessTokenRequestUrl, { json: accessTokenPayload })
     .then((accessTokenResponse) => {
-      console.log(accessTokenResponse)
       const accessToken = accessTokenResponse.access_token;
-    
+      // DONE: Use access token to make API call to 'shop' endpoint
       const shopRequestUrl = 'https://' + shop + '/admin/shop.json';
       const shopRequestHeaders = {
         'X-Shopify-Access-Token': accessToken,
       };
-      
+
       request.get(shopRequestUrl, { headers: shopRequestHeaders })
       .then((shopResponse) => {
-        res.end(shopResponse);
+        res.status(200).end(shopResponse);
       })
       .catch((error) => {
         res.status(error.statusCode).send(error.error.error_description);
       });
     })
     .catch((error) => {
-      console.log(error)
       res.status(error.statusCode).send(error.error.error_description);
     });
+
   } else {
     res.status(400).send('Required parameters missing');
   }
@@ -173,6 +146,47 @@ app.get('/shopify/callback', (req, res) => {
 
 
 
-app.listen(PORT, () => {
-  console.log(`🌎 ==> Server now on port ${PORT}!`);
-});
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // userlogin page
+  
+
+  app.post('/userinfo:post', (req,res) =>{
+    var userData = req.body;
+  
+  
+    db.User.create(userData)
+  
+    
+      .then(function(dbUser){
+        console.log(dbUser)
+      })
+      .catch(function(err){
+        return res.json(err)
+      })
+    }
+  ) 
+  
+  
+  app.listen(PORT, () => {
+    console.log(`🌎 ==> Server now on port ${PORT}!`);
+  });
+  
