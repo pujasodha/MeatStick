@@ -15,7 +15,7 @@ const apiKey = process.env.SHOPIFY_API_KEY;
 const apiSecret = process.env.SHOPIFY_API_SECRET;
 const access_token = process.env.ACCESS_TOKEN;
 const scopes = 'write_orders, read_customers';
-const forwardingAddress = `https://658f5de1.ngrok.io`
+const forwardingAddress = `https://8122ae0c.ngrok.io`
 const app = express();
 
 var axios = require("axios");
