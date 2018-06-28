@@ -12,7 +12,7 @@ const Footer = props =>
         </div>
         <div class="row">
             <div class="col-sm-3"></div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 list">
                 <h3>Shop and Learn</h3>
                 <ul>
                     <li class="listItem"><a class="linkItem">The MeatStick</a></li>
@@ -20,9 +20,9 @@ const Footer = props =>
                     <li class="listItem"><a class="linkItem">MeatStick App</a></li>
                 </ul>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 list">
                 <h3>More About MeatStick</h3>
-                <ul>
+                <ul class="list">
                     <li class="listItem"><a class="linkItem">About</a></li>
                     <li class="listItem"><a class="linkItem">FAQ</a></li>
                     <li class="listItem"><a class="linkItem">Support</a></li>
