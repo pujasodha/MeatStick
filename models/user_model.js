@@ -11,21 +11,11 @@ var UserSchema = new Schema({
     required: true
   },
     
-  email: {
+  review: {
     type: String,
     required: true
   },
     
-  phoneNumber: {
-    type: String,
-    required: true
-  },
-    
-  address: {
-    type: String,
-    required: true
-  },
-  
 });
 
 // This creates our model from the above schema, using mongoose's model method

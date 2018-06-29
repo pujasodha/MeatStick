@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Contact from "../../Component/Contact";
 
 
-
 class Support extends Component {
   render() {
     return (
