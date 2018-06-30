@@ -11,10 +11,10 @@ const Navbar = props =>
   <ul id="nav-mobile" class="hide-on-med-and-down">
     <li><a class="navText" href="/Meatstick">The MeatStick</a></li>
     <li><a class="navText" href="#">Wifi Bridge</a></li>
-    <li><a class="navText" href="#">Support</a></li>
+    <li><a class="navText" href="/Support">Support</a></li>
     <li><a class="navText" href="#">Blog</a></li>
   </ul>
-  <img href="#" id="bag" src={bag}></img>
+  <img href="/Cart" id="bag" src={bag}></img>
 </div>
 </nav>
 
