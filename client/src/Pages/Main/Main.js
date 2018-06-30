@@ -15,9 +15,7 @@ class Main extends Component {
      
       <Fullimage>{ProbePic}</Fullimage>
       <Fullimage2>{WifiBridge}</Fullimage2>
-      <HalfImageRow></HalfImageRow> 
-      <Review_card />
-      
+      <HalfImageRow></HalfImageRow>  
       </div>
     );
   }
