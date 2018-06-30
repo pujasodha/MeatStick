@@ -7,12 +7,12 @@ const Navbar = props =>
 
 <nav>
 <div class="nav-wrapper">
-  <img href="#" id="logo" src={logo}></img>
+  <a  href="/"><img id="logo" src={logo}></img></a>
   <ul id="nav-mobile" class="hide-on-med-and-down">
-    <li><a class="navText" href="/">The MeatStick</a></li>
-    <li><a class="navText" href="/Wifibridge">Wifi Bridge</a></li>
+    <li><a class="navText" href="/Meatstick">The MeatStick</a></li>
+    <li><a class="navText" href="#">Wifi Bridge</a></li>
     <li><a class="navText" href="/Support">Support</a></li>
-    <li><a class="navText" href="/Blog">Blog</a></li>
+    <li><a class="navText" href="#">Blog</a></li>
   </ul>
   <img href="/Cart" id="bag" src={bag}></img>
 </div>

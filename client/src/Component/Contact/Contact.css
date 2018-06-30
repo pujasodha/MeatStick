@@ -1,0 +1,11 @@
+.Contact{
+    background: rgb(113, 114, 114);
+    
+}
+#message{
+    background: white;
+    width: 23rem; 
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}

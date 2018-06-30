@@ -171,7 +171,7 @@ app.get('/shopify/callback', (req, res) => {
   // userlogin page
   
 
-  app.post('/userinfo:post', (req,res) =>{
+  app.post('/review', (req,res) =>{
     var userData = req.body;
   
   

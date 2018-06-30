@@ -1,0 +1,24 @@
+.subNav {
+    background-color: white;
+    border-bottom:  solid .5px rgb(204, 204, 204);
+}
+
+.subNavText {
+    color: black;
+    position: relative;
+    font-size: 13px;
+}
+
+#subNavName {
+    font-weight: bold;
+    left: -630%;
+}
+
+#overview {
+    left: -310%;
+}
+
+#specs {
+    left: -310%;
+    margin-left: 20px;
+}
