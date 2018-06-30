@@ -16,7 +16,7 @@ const apiKey = process.env.SHOPIFY_API_KEY;
 const apiSecret = process.env.SHOPIFY_API_SECRET;
 const access_token = process.env.ACCESS_TOKEN;
 const scopes = 'write_orders, read_customers';
-const forwardingAddress = `https://8122ae0c.ngrok.io`
+const forwardingAddress = `https://8c7d6cca.ngrok.io`
 const app = express();
 
 var axios = require("axios");
@@ -120,6 +120,7 @@ app.get('/shopify/callback', (req, res) => {
     request.post(accessTokenRequestUrl, { json: accessTokenPayload })
     .then((accessTokenResponse) => {
       const accessToken = accessTokenResponse.access_token;
+      console.log(accessTokenResponse)
       // DONE: Use access token to make API call to 'shop' endpoint
       const shopRequestUrl = 'https://' + shop + '/admin/shop.json';
       const shopRequestHeaders = {
