@@ -9,7 +9,7 @@ class BBQSet extends Component {
   render() {
     return (
       <div className="App">
-      <SubNav></SubNav>
+      <SubNav title="BBQ Super Set" id="TheBBQSet"></SubNav>
       <ProductImage id="BbqSet">{ BBQPicLight }</ProductImage>
       </div>
     );

@@ -13,7 +13,7 @@ const HalfImageRow = props =>
 </div>
 <div class="col-sm-6 halfDiv">
 <div class="halfImageDiv" id="halfImageDiv2">
-<a href="#" class="halfImageDiv" id="">
+<a href="/BBQSet" class="halfImageDiv" id="">
 <h1 class="halfTitle" id="halfTitle2">BBQ <span id="yellow">Set</span></h1>
     <img class="halfImagePic" id="halfImagePic2" src={ BBQPic }/>
 </a>

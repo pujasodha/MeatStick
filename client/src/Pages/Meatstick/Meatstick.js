@@ -9,7 +9,7 @@ class Meatstick extends Component {
   render() {
     return (
       <div className="App">
-      <SubNav></SubNav>
+      <SubNav id="The MeatStick"></SubNav>
       <ProductImage id="ProbePic">{ ProbePic }</ProductImage>
       </div>
     );
