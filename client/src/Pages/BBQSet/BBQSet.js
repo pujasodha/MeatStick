@@ -2,18 +2,18 @@ import React, { Component } from "react";
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import SubNav from '../../Component/SubNav';
 import ProductImage from '../../Component/ProductImage';
-import ProbePic from "../../Images/DSC_9455.png";
+import BBQPicLight from "../../Images/BBQSuper.jpg";
 
 
-class Meatstick extends Component {
+class BBQSet extends Component {
   render() {
     return (
       <div className="App">
       <SubNav></SubNav>
-      <ProductImage id="ProbePic">{ ProbePic }</ProductImage>
+      <ProductImage id="BbqSet">{ BBQPicLight }</ProductImage>
       </div>
     );
   }
 }
 
-export default Meatstick;
+export default BBQSet;

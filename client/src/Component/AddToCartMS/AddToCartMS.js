@@ -1,6 +1,6 @@
-<div id='product-component-89d805b2ef7'></div>
+<div id='product-component-886aec4b2be'></div>
 
-function () {
+(function () {
   var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
   if (window.ShopifyBuy) {
     if (window.ShopifyBuy.UI) {
@@ -22,15 +22,15 @@ function () {
 
   function ShopifyBuyInit() {
     var client = ShopifyBuy.buildClient({
-      domain: 'meatstick05.myshopify.com',
-      apiKey: '3c27692609d90e3fdccfe84d13d6a502',
+      domain: 'meatstick.myshopify.com',
+      apiKey: 'b403ab90557a2bc47c77e9cf1d25a750',
       appId: '6',
     });
 
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
-        id: [1649514643574],
-        node: document.getElementById('product-component-89d805b2ef7'),
+        id: [1114032472179],
+        node: document.getElementById('product-component-886aec4b2be'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -43,48 +43,35 @@ function () {
       "variantTitle": false,
       "price": false,
       "description": false,
-      "buttonWithQuantity": false,
+      "buttonWithQuantity": true,
+      "button": false,
       "quantity": false
     },
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
+          "max-width": "100%",
+          "margin-left": "0",
           "margin-bottom": "50px"
         }
       },
       "button": {
         "background-color": "#fd9626",
-        "font-family": "Arial, sans-serif",
         ":hover": {
           "background-color": "#e48722"
         },
-        "border-radius": "5px",
         ":focus": {
           "background-color": "#e48722"
-        },
-        "font-weight": "normal"
-      },
-      "variantTitle": {
-        "font-family": "Arial, sans-serif",
-        "font-weight": "normal"
+        }
       },
       "title": {
-        "font-family": "Arial, sans-serif",
-        "font-weight": "normal"
-      },
-      "description": {
-        "font-family": "Arial, sans-serif",
-        "font-weight": "normal"
+        "font-size": "26px"
       },
       "price": {
-        "font-family": "Arial, sans-serif",
-        "font-weight": "normal"
+        "font-size": "18px"
       },
       "compareAt": {
-        "font-family": "Arial, sans-serif",
-        "font-weight": "normal"
+        "font-size": "15px"
       }
     }
   },
@@ -95,15 +82,12 @@ function () {
     "styles": {
       "button": {
         "background-color": "#fd9626",
-        "font-family": "Arial, sans-serif",
         ":hover": {
           "background-color": "#e48722"
         },
-        "border-radius": "5px",
         ":focus": {
           "background-color": "#e48722"
-        },
-        "font-weight": "normal"
+        }
       },
       "footer": {
         "background-color": "#ffffff"
@@ -129,60 +113,25 @@ function () {
       },
       "button": {
         "background-color": "#fd9626",
-        "font-family": "Arial, sans-serif",
         ":hover": {
           "background-color": "#e48722"
         },
-        "border-radius": "5px",
         ":focus": {
           "background-color": "#e48722"
-        },
-        "font-weight": "normal"
-      },
-      "variantTitle": {
-        "font-family": "Arial, sans-serif",
-        "font-weight": "normal"
-      },
-      "title": {
-        "font-family": "Arial, sans-serif",
-        "font-weight": "normal"
-      },
-      "description": {
-        "font-family": "Arial, sans-serif",
-        "font-weight": "normal"
-      },
-      "price": {
-        "font-family": "Arial, sans-serif",
-        "font-weight": "normal"
-      },
-      "compareAt": {
-        "font-family": "Arial, sans-serif",
-        "font-weight": "normal"
+        }
       }
     }
   },
   "toggle": {
     "styles": {
       "toggle": {
-        "font-family": "Arial, sans-serif",
         "background-color": "#fd9626",
         ":hover": {
           "background-color": "#e48722"
         },
         ":focus": {
           "background-color": "#e48722"
-        },
-        "font-weight": "normal"
-      }
-    }
-  },
-  "option": {
-    "styles": {
-      "label": {
-        "font-family": "Arial, sans-serif"
-      },
-      "select": {
-        "font-family": "Arial, sans-serif"
+        }
       }
     }
   },
