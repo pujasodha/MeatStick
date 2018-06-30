@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
-import Main from "./Pages/Main"
-import Navbar from "./Component/NavBar"
-import Footer from "./Component/Footer"
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import Main from "./Pages/Main";
+import Navbar from "./Component/NavBar";
+import Footer from "./Component/Footer";
+import Meatstick from "./Pages/Meatstick";
+import BBQSet from "./Pages/BBQSet";
 
 class App extends Component {
   render() {
@@ -13,7 +15,9 @@ class App extends Component {
         <div>
         <Navbar />
           <Switch>
-            <Route exact path="/" component = {Main} />
+            <Route exact path="/" component = { Main } />
+            <Route exact path="/Meatstick" component = { Meatstick } />
+            <Route exact path="/BBQSet" component = { BBQSet } />
           </Switch>
         <Footer />
         </div>

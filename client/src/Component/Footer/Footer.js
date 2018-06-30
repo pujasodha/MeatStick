@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = props =>
     <div class="" id="footerDiv">
-        <div class="row" id="">
+        <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-6" id="disclaimerDiv">
                 <p>Cell phones are not included</p>
@@ -15,8 +15,9 @@ const Footer = props =>
             <div class="col-sm-3 list">
                 <h3>Shop and Learn</h3>
                 <ul>
-                    <li class="listItem"><a class="linkItem">The MeatStick</a></li>
+                    <li class="listItem"><a class="linkItem" href="/Meatstick">The MeatStick</a></li>
                     <li class="listItem"><a class="linkItem">Wifi Bridge</a></li>
+                    <li class="listItem"><a class="linkItem" href="/BBQSet">BBQ Super Set</a></li>
                     <li class="listItem"><a class="linkItem">MeatStick App</a></li>
                 </ul>
             </div>
