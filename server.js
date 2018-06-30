@@ -167,7 +167,7 @@ app.get('/shopify/callback', (req, res) => {
 
 
 
-  // userlogin page
+  // database 
   
 
   app.post('/review', (req,res) =>{
@@ -185,7 +185,19 @@ app.get('/shopify/callback', (req, res) => {
       })
     }
   ) 
-  
+  // database pull
+  app.get("/review_card",(req,res)=>{
+    db.User.find()
+    .then(function(data){
+      res.json(data)
+    })
+    .catch(function(err){
+      console.log('error')
+        res.json(err)
+
+    })
+
+  })
 
   // Email support page 
   app.post("/mail", (req,res)=>{
@@ -219,6 +231,8 @@ app.get('/shopify/callback', (req, res) => {
         console.log(info);
    });
   })
+
+  
 
   
   app.listen(PORT, () => {
