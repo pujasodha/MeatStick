@@ -8,7 +8,7 @@ import Meatstick from "./Pages/Meatstick";
 import WifiBridge from "./Pages/WifiBridge";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import BBQSet from "./Pages/BBQSet";
-import Support from "./Pages/Support/Support.js";
+import Support from "./Pages/Support";
 import About from "./Pages/About";
 import Terms from "./Pages/Terms";
 
