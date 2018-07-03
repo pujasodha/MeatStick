@@ -8,12 +8,9 @@ import Meatstick from "./Pages/Meatstick";
 import WifiBridge from "./Pages/WifiBridge";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import BBQSet from "./Pages/BBQSet";
-import Support from "./Pages/Support";
-<<<<<<< HEAD
-=======
+import Support from "./Pages/Support/Support.js";
 import About from "./Pages/About";
 import Terms from "./Pages/Terms";
->>>>>>> 1656ab1a50aeed7ff72789304cfd91de3881305d
 
 class App extends Component {
   render() {
