@@ -9,13 +9,19 @@
     font-size: 13px;
 }
 
-#The MeatStick {
+.mainSubNav {
     font-weight: bold;
+}
+
+#wifiBridgeNav {
+    left: -760%;
+}
+
+#meatStickNav {
     left: -630%;
 }
 
 #TheBBQSet{
-    font-weight: bold;
     left: -610%;
 }
 

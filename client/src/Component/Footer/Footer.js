@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = props =>
     <div class="" id="footerDiv">
-        <div class="row">
+        <div class="row footerRow">
             <div class="col-sm-3"></div>
             <div class="col-sm-6" id="disclaimerDiv">
                 <p>Cell phones are not included</p>
@@ -15,8 +15,8 @@ const Footer = props =>
             <div class="col-sm-3 list">
                 <h3>Shop and Learn</h3>
                 <ul>
-                    <li class="listItem"><a class="linkItem" href="/Meatstick">The MeatStick</a></li>
-                    <li class="listItem"><a class="linkItem">Wifi Bridge</a></li>
+                    <li class="listItem"><a class="linkItem" href="/MeatStick">The MeatStick</a></li>
+                    <li class="listItem"><a class="linkItem" href="/WifiBridge">Wifi Bridge</a></li>
                     <li class="listItem"><a class="linkItem" href="/BBQSet">BBQ Super Set</a></li>
                     <li class="listItem"><a class="linkItem">MeatStick App</a></li>
                 </ul>
@@ -35,7 +35,7 @@ const Footer = props =>
             <div class="col-sm-3"></div>
             <div class="col-sm-6" id="copyRightDiv">
                 <span id="copyrightLine">Copyright &copy; 2017 The MeatStick. All rights reserved.</span>
-                <a class="policyList">Policy</a>
+                <a  href="/PrivacyPolicy" class="policyList">Privacy Policy</a>
                 <a class="policyList">Terms of Use</a>
                 <a class="policyList" id="lastPolicyList">Sales and Refunds</a>
             </div>

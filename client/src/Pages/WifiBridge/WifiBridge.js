@@ -2,18 +2,18 @@ import React, { Component } from "react";
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import SubNav from '../../Component/SubNav';
 import ProductImage from '../../Component/ProductImage';
-import ProbePic from "../../Images/DSC_9455.png";
+import WifiBridgePic from "../../Images/Bridgecopy.png";
 
 
-class Meatstick extends Component {
+class WifiBridge extends Component {
   render() {
     return (
       <div className="App">
-      <SubNav title="The MeatStick" id="meatStickNav"></SubNav>
-      <ProductImage id="ProbePic">{ ProbePic }</ProductImage>
+      <SubNav title="Wifi Bridge" id="wifiBridgeNav"></SubNav>
+      <ProductImage id="wifiBridgePic">{ WifiBridgePic }</ProductImage>
       </div>
     );
   }
 }
 
-export default Meatstick;
+export default WifiBridge;
