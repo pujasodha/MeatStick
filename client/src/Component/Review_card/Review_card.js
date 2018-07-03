@@ -24,9 +24,9 @@ class Review_card extends Component {
     
     render() {
         return(
-            <div className="Review_card">
+            <div className="Review_card" >
                {this.state.reviews.map(review =>(
-                   <p key={review._id} >{review.name}<br/>{review.review}</p>
+                   <p id ="card"key={review._id} >{review.name}<br/>{review.review}</p>
                ))} 
             </div>
         )
