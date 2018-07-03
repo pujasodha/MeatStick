@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Contact from "../../Component/Contact";
 
-
 class Support extends Component {
   render() {
     return (
@@ -12,8 +11,7 @@ class Support extends Component {
         <p>For APP support, please e-mail us through the support section in the app.</p>
        
         <Contact />
-       
-      
+           
       </div>
     );
   }
