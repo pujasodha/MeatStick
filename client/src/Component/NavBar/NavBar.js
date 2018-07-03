@@ -6,13 +6,13 @@ import bag from "../../Images/icons/shopping-bag.png";
 const Navbar = props => 
 
 <nav>
-<div class="nav-wrapper">
+<div className="nav-wrapper">
   <a  href="/"><img id="logo" src={logo}></img></a>
-  <ul id="nav-mobile" class="hide-on-med-and-down">
-    <li><a class="navText" href="/Meatstick">The MeatStick</a></li>
-    <li><a class="navText" href="#">Wifi Bridge</a></li>
-    <li><a class="navText" href="/Support">Support</a></li>
-    <li><a class="navText" href="#">Blog</a></li>
+  <ul id="nav-mobile" className="hide-on-med-and-down">
+    <li><a className="navText" href="/MeatStick">The MeatStick</a></li>
+    <li><a className="navText" href="/WifiBridge">Wifi Bridge</a></li>
+    <li><a className="navText" href="/Support">Support</a></li>
+    <li><a className="navText" href="#">Blog</a></li>
   </ul>
   <img href="/Cart" id="bag" src={bag}></img>
 </div>

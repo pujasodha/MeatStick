@@ -28,7 +28,7 @@
 #copyrightLine {
     width:400px;
     margin: 0px;
-    margin-right: 260px;
+    margin-right: 210px;
     font-size: 12px;
 }
 
@@ -62,7 +62,7 @@ h3 {
     margin-top: 15px;
 }
 
-.row {
+.footerRow {
     margin-bottom: 10px;
     margin-top: 0px;
 }

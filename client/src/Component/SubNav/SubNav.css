@@ -9,9 +9,20 @@
     font-size: 13px;
 }
 
-#subNavName {
+.mainSubNav {
     font-weight: bold;
+}
+
+#wifiBridgeNav {
+    left: -760%;
+}
+
+#meatStickNav {
     left: -630%;
+}
+
+#TheBBQSet{
+    left: -610%;
 }
 
 #overview {
