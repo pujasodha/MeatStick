@@ -9,8 +9,7 @@ class Support extends Component {
         <p>PLEASE REACH OUT IF YOU HAVE ANY QUESTIONS ABOUT OUR PRODUCT. </p>
         <p>For APP support, please e-mail us through the support section in the app.</p>
         <Contact />
-       
-      
+           
       </div>
     );
   }

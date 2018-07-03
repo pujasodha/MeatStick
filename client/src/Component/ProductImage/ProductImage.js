@@ -4,7 +4,7 @@ import "./ProductImage.css";
 const ProductImage = props => 
 
 <div>
-<img class="productImage" id={props.id} src={props.children}/>
+<img className="productImage" id={props.id} src={props.children}/>
 </div>
 
 export default ProductImage;
