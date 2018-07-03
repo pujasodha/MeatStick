@@ -6,7 +6,7 @@ import Navbar from "./Component/NavBar";
 import Footer from "./Component/Footer";
 import Meatstick from "./Pages/Meatstick";
 import BBQSet from "./Pages/BBQSet";
-import Support from "./Pages/Support/Support.js";
+import Support from "./Pages/Support";
 
 class App extends Component {
   render() {
