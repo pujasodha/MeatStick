@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Contact from "../../Component/Contact";
-import "./Support.css"
+import "./Support.css";
+import Review from "../../Component/Review";
 
 class Support extends Component {
   render() {
@@ -9,6 +10,7 @@ class Support extends Component {
         <h1 id="contactH1">Contact Us</h1>
         <p id="contactP">Please reach out if you have any questions about our products.</p>
         <Contact />
+        <Review/>
            
       </div>
     );

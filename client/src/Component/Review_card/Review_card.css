@@ -1,0 +1,7 @@
+.Review_card{
+    width: 1200px;
+    height: 300px;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    overflow: scroll;
+}
