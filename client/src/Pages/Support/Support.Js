@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Contact from "../../Component/Contact";
+import "./Support.css"
 
 class Support extends Component {
   render() {
     return (
       <div className="Support">
-        <p>CONTACT US</p>
-        <p>PLEASE REACH OUT IF YOU HAVE ANY QUESTIONS ABOUT OUR PRODUCT. </p>
-        <p>For APP support, please e-mail us through the support section in the app.</p>
+        <h1 id="contactH1">Contact Us</h1>
+        <p id="contactP">Please reach out if you have any questions about our products.</p>
         <Contact />
            
       </div>

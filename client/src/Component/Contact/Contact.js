@@ -94,6 +94,7 @@ class Contact extends Component {
 
                                     <div className="input-field col s6">
                                         <button 
+                                            id="contactSubmit"
                                             className="btn btn-large btn-register waves-effect waves-light" 
                                             type="submit" 
                                             name="action"
