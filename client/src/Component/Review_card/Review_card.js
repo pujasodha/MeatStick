@@ -24,11 +24,23 @@ class Review_card extends Component {
     
     render() {
         return(
-            <div className="Review_card">
+            <div className="Review_card"  >
+           
                {this.state.reviews.map(review =>(
-                   <p key={review._id} >{review.name}<br/>{review.review}</p>
-               ))} 
+         <div class="row">
+         <div class="col s12 m6">
+           <div class="card blue-grey darken-1">
+             <div class="card-content white-text">
+               <span class="card-title">Reviews</span>
+               <p id ="card"key={review._id} >{review.name}<br/>{review.review}</p>
+             </div>
+           </div>
+         </div>
+       </div>
+        
+                 ))} 
             </div>
+            
         )
     }
 }
