@@ -56,7 +56,7 @@ class Contact extends Component {
             <div className='Contact'>
                 <div className="container">
                     <div className="row">
-                        <form className="col s12" id="reg-form">
+                        <form className="col s10" id="reg-form">
                             <div className="row">
                                 <div className="input-field col s6">
                                     <input  id="name" name = "name" type="text" className="validate" placeholder="Name" required value={this.state.name}   onChange = {this.handleInputChange}/>
@@ -69,13 +69,13 @@ class Contact extends Component {
                                    
                                 </div>
                                 <div className="row">
-                                    <div className="input-field col s12">
+                                    <div className="input-field col s10">
                                         <input name="phoneNumber" id="phoneNumber" type="Text" className="validate" minlength="8" maxlength ="13"required placeholder="Phone Number" value = {this.state.phoneNumber} onChange = {this.handleInputChange}/>
                                             
                                       
                                     </div>
                                     <div className="row">
-                                        <div className="input-field col s12">
+                                        <div className="input-field col s6">
                                             <textarea 
                                             name="message" 
                                             id="message" 
@@ -92,7 +92,7 @@ class Contact extends Component {
                                         </div>
                                     </div>
 
-                                    <div className="input-field col s6">
+                                    <div className="input-field col s9">
                                         <button 
                                             className="btn btn-large btn-register waves-effect waves-light" 
                                             type="submit" 
