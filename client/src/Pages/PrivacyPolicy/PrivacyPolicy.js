@@ -5,6 +5,7 @@ class PrivacyPolicy extends Component {
     render() {
         return (
             <div className="App">
+            <div className="container">
                 <div className="privacyDiv">
                         <h1>Privacy Policy</h1>
                         <p>This website is operated by or on behalf of Soma Labs LLC (referred to as “The MeatStick”, “we”, “our” and “us”).
@@ -66,6 +67,7 @@ To modify or delete entirely the information you have provided during registrati
                         </p>
                         <h2>Notice and Contact Information:</h2>
                         <p>For questions or concerns, please email us or contact us at: info@themeatstick.com.</p>
+                    </div>
                     </div>
             </div>
         );
