@@ -10,6 +10,7 @@ class Support extends Component {
         <h1 id="contactH1">Contact Us</h1>
         <p id="contactP">Please reach out if you have any questions about our products.</p>
         <Contact />
+        <h1 id="reviewTitle">Review</h1>
         <Review/>
            
       </div>

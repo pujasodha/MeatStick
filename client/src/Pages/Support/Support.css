@@ -1,16 +1,20 @@
 #contactH1 {
-    margin-left: 650px;
+    margin-left: 660px;
 }
 
 #contactP {
-    margin-left: 600px;
+    margin-left: 610px;
     margin-bottom: 40px;
 }
 
 .Support {
     margin-bottom: 40px;
+}
 
 .contact{
    text-align: center
+}
 
+#reviewTitle {
+    margin-left: 730px;
 }
