@@ -10,12 +10,9 @@ class Contact extends Component {
         message: ""
     }
 
-
     handleSubmit = event => {
 
         event.preventDefault()
-
-
 
         axios.post("/mail", {
             name: this.state.name,
@@ -35,11 +32,7 @@ class Contact extends Component {
             phoneNumber: "",
             message: ""
         })
-
-
     }
-
-
 
     handleInputChange = event => {
         // Getting the value and name of the input which triggered the change.
@@ -65,27 +58,22 @@ class Contact extends Component {
                                     <input name="email" id="email" type="text" className="validate" required placeholder="E-mail" value={this.state.email} onChange={this.handleInputChange} />
                                 </div>
                                 <div className="row">
-
-                                    <div className="input-field col s10">
-                                        <input name="phoneNumber" id="phoneNumber" type="Text" className="validate" minlength="8" maxlength ="13"required placeholder="Phone Number" value = {this.state.phoneNumber} onChange = {this.handleInputChange}/>
-                                            
-                                      
+                                    <div className="input-field col s12">
+                                        <input name="phoneNumber" id="phoneNumber" type="Text" className="validate" minlength="8" maxlength="13" required placeholder="Phone Number" value={this.state.phoneNumber} onChange={this.handleInputChange} />
                                     </div>
                                     <div className="row">
-                                        <div className="input-field col s6">
-                                            <textarea 
-                                            name="message" 
-                                            id="message" 
-                                            type="Text" 
-                                            className="validate" 
-                                            minlength="3" 
-                                            required  
-                                            placeholder="message" 
-                                            value = {this.state.message} 
-                                            onChange = {this.handleInputChange}
-                                            rows="10" cols="30" />
-                                             
-                                            
+                                        <div className="input-field col s12">
+                                            <textarea
+                                                name="message"
+                                                id="message"
+                                                type="Text"
+                                                className="validate"
+                                                minlength="3"
+                                                required
+                                                placeholder=" Message"
+                                                value={this.state.message}
+                                                onChange={this.handleInputChange}
+                                                rows="10" cols="30" />
                                         </div>
                                     </div>
 
@@ -104,8 +92,6 @@ class Contact extends Component {
                         </form>
                     </div>
                 </div>
-
-
             </div>
         )
     }
