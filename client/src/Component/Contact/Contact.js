@@ -10,12 +10,9 @@ class Contact extends Component {
         message: ""
     }
 
-
     handleSubmit = event => {
 
         event.preventDefault()
-
-
 
         axios.post("/mail", {
             name: this.state.name,
@@ -35,11 +32,7 @@ class Contact extends Component {
             phoneNumber: "",
             message: ""
         })
-
-
     }
-
-
 
     handleInputChange = event => {
         // Getting the value and name of the input which triggered the change.
@@ -67,8 +60,6 @@ class Contact extends Component {
                                 <div className="row">
                                     <div className="input-field col s12">
                                         <input name="phoneNumber" id="phoneNumber" type="Text" className="validate" minlength="8" maxlength="13" required placeholder="Phone Number" value={this.state.phoneNumber} onChange={this.handleInputChange} />
-
-
                                     </div>
                                     <div className="row">
                                         <div className="input-field col s12">
@@ -79,7 +70,7 @@ class Contact extends Component {
                                                 className="validate"
                                                 minlength="3"
                                                 required
-                                                placeholder="message"
+                                                placeholder=" Message"
                                                 value={this.state.message}
                                                 onChange={this.handleInputChange}
                                                 rows="10" cols="30" />
@@ -101,8 +92,6 @@ class Contact extends Component {
                         </form>
                     </div>
                 </div>
-
-
             </div>
         )
     }
