@@ -56,7 +56,7 @@ class Contact extends Component {
             <div className='Contact'>
                 <div className="container">
                     <div className="row">
-                        <form className="col s12" id="reg-form">
+                        <form className="col s10" id="reg-form">
                             <div className="row">
                                 <div className="input-field col s6">
                                     <input id="name" name="name" type="text" className="validate" placeholder="Name" required value={this.state.name} onChange={this.handleInputChange} />
@@ -65,32 +65,35 @@ class Contact extends Component {
                                     <input name="email" id="email" type="text" className="validate" required placeholder="E-mail" value={this.state.email} onChange={this.handleInputChange} />
                                 </div>
                                 <div className="row">
-                                    <div className="input-field col s12">
-                                        <input name="phoneNumber" id="phoneNumber" type="Text" className="validate" minlength="8" maxlength="13" required placeholder="Phone Number" value={this.state.phoneNumber} onChange={this.handleInputChange} />
 
-
+                                    <div className="input-field col s10">
+                                        <input name="phoneNumber" id="phoneNumber" type="Text" className="validate" minlength="8" maxlength ="13"required placeholder="Phone Number" value = {this.state.phoneNumber} onChange = {this.handleInputChange}/>
+                                            
+                                      
                                     </div>
                                     <div className="row">
-                                        <div className="input-field col s12">
-                                            <textarea
-                                                name="message"
-                                                id="message"
-                                                type="Text"
-                                                className="validate"
-                                                minlength="3"
-                                                required
-                                                placeholder="message"
-                                                value={this.state.message}
-                                                onChange={this.handleInputChange}
-                                                rows="10" cols="30" />
+                                        <div className="input-field col s6">
+                                            <textarea 
+                                            name="message" 
+                                            id="message" 
+                                            type="Text" 
+                                            className="validate" 
+                                            minlength="3" 
+                                            required  
+                                            placeholder="message" 
+                                            value = {this.state.message} 
+                                            onChange = {this.handleInputChange}
+                                            rows="10" cols="30" />
+                                             
+                                            
                                         </div>
                                     </div>
 
-                                    <div className="input-field col s6">
-                                        <button
-                                            id="contactSubmit"
-                                            className="btn btn-large btn-register waves-effect waves-light"
-                                            type="submit"
+                                    <div className="input-field col s9">
+                                        <button 
+                                            className="btn btn-large btn-register waves-effect waves-light" 
+                                            type="submit" 
+
                                             name="action"
                                             onClick={this.handleSubmit}
                                         >Send
