@@ -48,9 +48,7 @@ class Review extends Component {
         return (
             <div className="Review">
                 <div className="container">
-                <h1>Review</h1>
                     <div className="row">
-         
                         <div className="input-field  col s4">
                             <input id="name" name="name" type="text" className="validate" placeholder="Name" required value={this.state.name} onChange={this.handleInputChange} />
                         </div>
@@ -68,6 +66,7 @@ class Review extends Component {
                                 rows="10" 
                                 cols="30" />
                             <button
+                                id="reviewBTN"
                                 className="btn btn-large btn-register waves-effect waves-light col s2"
                                 type="submit"
                                 name="action"

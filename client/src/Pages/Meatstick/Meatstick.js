@@ -4,6 +4,8 @@ import SubNav from '../../Component/SubNav';
 import ProductImage from '../../Component/ProductImage';
 import ProbePic from "../../Images/DSC_9455.png";
 import Review_cards from "../../Component/Review_card"
+import "./Meatstick.css";
+
 
 class Meatstick extends Component {
   render() {
@@ -11,6 +13,7 @@ class Meatstick extends Component {
       <div className="App">
         <SubNav title="The MeatStick" id="meatStickNav"></SubNav>
         <ProductImage id="ProbePic">{ProbePic}</ProductImage>
+
         <h1>The MeatStick</h1>
         <div className ="row">
         <div className="col 6">
@@ -28,10 +31,12 @@ class Meatstick extends Component {
           <h3>APP CONTROLLED</h3>
           <p>Use The MeatStick app to cook all types of meat perfectly and consistently. The app is available on both Android and iOS. As the cook progresses, the app will update the estimated cook time so you know when your meat will be done.</p>
 
+
           <h3>RECHARGEABLE BATTERY – LASTS OVER 36 HOURS</h3>
           The MeatStick uses a rechargeable battery that charges through the included charger with a microUSB input. (Cable included)
           
 <h3>WI-FI LINK - EXTEND YOUR RANGE</h3>
+
           <p>The MeatStick uses Bluetooth to communicate with your phone with a range of up to 30 feet. However, when The MeatStick is enclosed in an oven, grill, smoker, or water (sous vide), the range can be greatly limited depending on the enclosure. Wi-Fi Link allows you to use your extra phone/tablet in range of The MeatStick to transmit the temperature data through your local Wi-Fi or through the cloud to your phone. You can then check your temperatures from anywhere!</p>
 
           <p>You may also consider The MeatStick WiFi Bridge to extend your range if you do not have an extra phone.</p>

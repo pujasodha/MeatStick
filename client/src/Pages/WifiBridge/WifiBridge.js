@@ -3,6 +3,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import SubNav from '../../Component/SubNav';
 import ProductImage from '../../Component/ProductImage';
 import WifiBridgePic from "../../Images/Bridgecopy.png";
+import "./WifiBridge.css"
 
 
 class WifiBridge extends Component {
@@ -11,6 +12,7 @@ class WifiBridge extends Component {
       <div className="App">
       <SubNav title="Wifi Bridge" id="wifiBridgeNav"></SubNav>
       <ProductImage id="wifiBridgePic">{ WifiBridgePic }</ProductImage>
+      <h1 id="wifiBridgeTitle">The Wifi<span id="yellow">Bridge</span></h1>
       </div>
     );
   }

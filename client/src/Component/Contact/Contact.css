@@ -1,11 +1,16 @@
 .Contact{
-    background: rgb(113, 114, 114);
+    background: #fafafa;
     margin: 1rem
 }
+
 #message{
     background: white;
     width: 30rem; 
     height: 10rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+#contactSubmit {
+    background-color: #fd9626
 }
