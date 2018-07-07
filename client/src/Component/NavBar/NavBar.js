@@ -14,7 +14,7 @@ const Navbar = props =>
     <li><a className="navText" href="/Support">Support</a></li>
     <li><a className="navText" href="#">Blog</a></li>
   </ul>
-  <img href="/Cart" id="bag" src={bag}></img>
+  <a href="/Cart"><img  id="bag" src={bag}></img></a>
 </div>
 </nav>
 
