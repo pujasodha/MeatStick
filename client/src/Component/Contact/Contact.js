@@ -49,7 +49,7 @@ class Contact extends Component {
             <div className='Contact'>
                 <div className="container">
                     <div className="row">
-                        <form className="col s12" id="reg-form">
+                        <form className="col s10" id="reg-form">
                             <div className="row">
                                 <div className="input-field col s6">
                                     <input id="name" name="name" type="text" className="validate" placeholder="Name" required value={this.state.name} onChange={this.handleInputChange} />
@@ -77,11 +77,11 @@ class Contact extends Component {
                                         </div>
                                     </div>
 
-                                    <div className="input-field col s6">
-                                        <button
-                                            id="contactSubmit"
-                                            className="btn btn-large btn-register waves-effect waves-light"
-                                            type="submit"
+                                    <div className="input-field col s9">
+                                        <button 
+                                            className="btn btn-large btn-register waves-effect waves-light" 
+                                            type="submit" 
+
                                             name="action"
                                             onClick={this.handleSubmit}
                                         >Send
