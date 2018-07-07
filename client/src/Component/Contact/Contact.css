@@ -1,6 +1,7 @@
 .Contact{
     background: #fafafa;
-    margin: 1rem
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #message{
@@ -12,5 +13,19 @@
 }
 
 #contactSubmit {
-    background-color: #fd9626
+    background-color: #fd9626;
+    float: right;
+    margin-right: 13px;
+}
+
+.input-field {
+    margin-left: 0px;
+}
+
+#marginLeft0 {
+    margin-left: 0px;
+}
+
+#reg-form {
+    width: 1200px;
 }

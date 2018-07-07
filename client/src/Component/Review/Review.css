@@ -21,6 +21,11 @@
     margin-left: 0px;
 }
 
+textarea {
+    background-color: white;
+    height: 144px;
+}
+
 #divThing3 {
     margin-left: 0px;
 }
