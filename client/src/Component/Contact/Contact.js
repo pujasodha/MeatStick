@@ -49,50 +49,63 @@ class Contact extends Component {
             <div className='Contact'>
                 <div className="container">
                     <div className="row">
-                        <form className="col s12" id="reg-form">
+                        <form id="reg-form">
                             <div className="row">
-                                <div className="input-field col s6">
+                                <div className="col s3" id="marginLeft0"></div>
+                                <div className="input-field col s6" id="marginLeft0">
                                     <input id="name" name="name" type="text" className="validate" placeholder="Name" required value={this.state.name} onChange={this.handleInputChange} />
                                 </div>
-                                <div className="input-field col s6">
+                                <div className="col s3"></div>
+                            </div>
+                            <div className="row">
+                                <div className="col s3"></div>
+                                <div className="input-field col s6" id="marginLeft0">
                                     <input name="email" id="email" type="text" className="validate" required placeholder="E-mail" value={this.state.email} onChange={this.handleInputChange} />
                                 </div>
-                                <div className="row">
-                                    <div className="input-field col s12">
-                                        <input name="phoneNumber" id="phoneNumber" type="Text" className="validate" minlength="8" maxlength="13" required placeholder="Phone Number" value={this.state.phoneNumber} onChange={this.handleInputChange} />
-                                    </div>
-                                    <div className="row">
-                                        <div className="input-field col s12">
-                                            <textarea
-                                                name="message"
-                                                id="message"
-                                                type="Text"
-                                                className="validate"
-                                                minlength="3"
-                                                required
-                                                placeholder=" Message"
-                                                value={this.state.message}
-                                                onChange={this.handleInputChange}
-                                                rows="10" cols="30" />
-                                        </div>
-                                    </div>
-
-                                    <div className="input-field col s6">
-                                        <button
-                                            id="contactSubmit"
-                                            className="btn btn-large btn-register waves-effect waves-light"
-                                            type="submit"
-                                            name="action"
-                                            onClick={this.handleSubmit}
-                                        >Send
-                                        </button>
-                                    </div>
+                                <div className="col s3"></div>
                                 </div>
+                            <div className="row">
+                            <div className="col s3"></div>
+                                <div className="input-field col s6">
+                                    <input name="phoneNumber" id="phoneNumber" type="Text" className="validate" minlength="8" maxlength="13" required placeholder="Phone Number" value={this.state.phoneNumber} onChange={this.handleInputChange} />
+                                </div>
+                                <div className="col s3"></div>
+                                </div>
+                                <div className="row">
+                                <div className="col s3"></div>
+                                    <div className="input-field col s6">
+                                        <textarea
+                                            name="message"
+                                            id="message"
+                                            type="Text"
+                                            className="validate"
+                                            minlength="3"
+                                            required
+                                            placeholder=" Message"
+                                            value={this.state.message}
+                                            onChange={this.handleInputChange}
+                                            rows="10" cols="30" />
+                                    </div>
+                                    <div className="col s3"></div>
+                                </div>
+                                <div className="row">
+                                <div className="col s3" id="marginLeft0"></div>
+                                <div className="input-field col s6" id="marginLeft0">
+                                    <button
+                                        id="contactSubmit"
+                                        className="btn btn-large btn-register waves-effect waves-light"
+                                        type="submit"
+                                        name="action"
+                                        onClick={this.handleSubmit}
+                                    >Send
+                                        </button>
+                                        <div className="col s3"></div>
+                            </div>
                             </div>
                         </form>
-                    </div>
                 </div>
             </div>
+            </div >
         )
     }
 }

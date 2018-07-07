@@ -11,6 +11,7 @@ class Support extends Component {
         <p id="contactP">Please reach out if you have any questions about our products.</p>
         <Contact />
         <h1 id="reviewTitle">Review</h1>
+        <p id="reviewP">Please leave a review of any of our products.</p>
         <Review/>
            
       </div>
