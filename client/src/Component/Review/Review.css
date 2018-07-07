@@ -1,7 +1,31 @@
 #reviewBTN {
-    background-color: #fd9626
+    background-color: #fd9626;
+    float: right;
+    margin-bottom: 50px;
 }
 
 .Review {
     background: #fafafa;
+}
+
+#message {
+    width: 570px;
+    margin-left: 0px;
+}
+
+#divThing {
+    margin-left: 0px;
+}
+
+#divThing2 {
+    margin-left: 0px;
+}
+
+textarea {
+    background-color: white;
+    height: 144px;
+}
+
+#divThing3 {
+    margin-left: 0px;
 }
