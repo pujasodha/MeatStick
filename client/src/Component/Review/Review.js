@@ -14,13 +14,12 @@ class Review extends Component {
 
         event.preventDefault()
 
+        axios.post("/review",{
+            name:this.state.name,
+            review:this.state.review
+            
+        }).then(function(res){
 
-
-        axios.post("/review", {
-            name: this.state.name,
-            review: this.state.review,
-
-        }).then(function (res) {
             console.log(res)
         }).catch(function (e) {
             console.log(e)
@@ -61,8 +60,8 @@ class Review extends Component {
                         <div className="col s3" id="divThing"></div>
                         <div className="input-field  col s6" id="divThing2">
                             <textarea
-                                name="message"
-                                id="message"
+                                id="review"
+                                name="review"
                                 type="Text"
                                 className="validate"
                                 minlength="3"

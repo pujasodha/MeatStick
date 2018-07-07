@@ -95,8 +95,8 @@ app.get('/shopify/callback', (req, res) => {
         .createHmac('sha256', apiSecret)
         .update(message)
         .digest('hex'),
-        'utf-8'
-      );
+      'utf-8'
+    );
     let hashEquals = false;
 
     try {
@@ -118,26 +118,26 @@ app.get('/shopify/callback', (req, res) => {
     };
 
     request.post(accessTokenRequestUrl, { json: accessTokenPayload })
-    .then((accessTokenResponse) => {
-      const accessToken = accessTokenResponse.access_token;
-      console.log(accessTokenResponse)
-      // DONE: Use access token to make API call to 'shop' endpoint
-      const shopRequestUrl = 'https://' + shop + '/admin/shop.json';
-      const shopRequestHeaders = {
-        'X-Shopify-Access-Token': accessToken,
-      };
+      .then((accessTokenResponse) => {
+        const accessToken = accessTokenResponse.access_token;
+        console.log(accessTokenResponse)
+        // DONE: Use access token to make API call to 'shop' endpoint
+        const shopRequestUrl = 'https://' + shop + '/admin/shop.json';
+        const shopRequestHeaders = {
+          'X-Shopify-Access-Token': accessToken,
+        };
 
-      request.get(shopRequestUrl, { headers: shopRequestHeaders })
-      .then((shopResponse) => {
-        res.status(200).end(shopResponse);
+        request.get(shopRequestUrl, { headers: shopRequestHeaders })
+          .then((shopResponse) => {
+            res.status(200).end(shopResponse);
+          })
+          .catch((error) => {
+            res.status(error.statusCode).send(error.error.error_description);
+          });
       })
       .catch((error) => {
         res.status(error.statusCode).send(error.error.error_description);
       });
-    })
-    .catch((error) => {
-      res.status(error.statusCode).send(error.error.error_description);
-    });
 
   } else {
     res.status(400).send('Required parameters missing');
@@ -146,97 +146,72 @@ app.get('/shopify/callback', (req, res) => {
 
 
 
+// database 
 
 
+app.post('/review', (req, res) => {
+  var userData = req.body;
+  db.User.create(userData)
+  console.log(userData)
 
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // database 
-  
-
-  app.post('/review', (req,res) =>{
-    var userData = req.body;
-  
-  
-    db.User.create(userData)
-  
-    
-      .then(function(dbUser){
-        console.log(dbUser)
-      })
-      .catch(function(err){
-        return res.json(err)
-      })
-    }
-  ) 
-  // database pull
-  app.get("/review_card",(req,res)=>{
-    db.User.find()
-    .then(function(data){
+    .then(function (userData) {
+      console.log(userData)
+    })
+    .catch(function (err) {
+      return res.json(err)
+    })
+}
+)
+// database pull
+app.get("/review_card", (req, res) => {
+  db.User.find()
+    .then(function (data) {
       res.json(data)
     })
-    .catch(function(err){
+    .catch(function (err) {
       console.log('error')
-        res.json(err)
+      res.json(err)
 
     })
 
-  })
+})
 
-  // Email support page 
-  app.post("/mail", (req,res)=>{
+// Email support page 
+app.post("/mail", (req, res) => {
 
-   var data= "<p> name:"+req.body.name+"</p> ";
-   data+="<p> Email:"+req.body.Email+"</p> "
-   data+="<p> Phone:"+req.body.phoneNumber+"</p> "
-   data+="<p> Message:"+req.body.message+"</p> "
+  var data = "<p> name:" + req.body.name + "</p> ";
+  data += "<p> Email:" + req.body.Email + "</p> "
+  data += "<p> Phone:" + req.body.phoneNumber + "</p> "
+  data += "<p> Message:" + req.body.message + "</p> "
 
-    
 
-    var transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-             user: 'themeatstickthermometer123@gmail.com',
-             pass: process.env.EMAIL_PASS
-         }
-     });
 
-     const mailOptions = {
-      from: 'themeatstickthermometer123@gmail.com', // sender address
-      to: 'jdeje002@gmail.com', // Add clients Email
-      subject: 'MEAT STICK SUPPORT', // Subject line
-      html:data // plain text body
-      
-    };
-    transporter.sendMail(mailOptions, function (err, info) {
-      if(err)
-        console.log(err)
-      else
-        console.log(info);
-   });
-  })
-
-  
-
-  
-  app.listen(PORT, () => {
-    console.log(`🌎 ==> Server now on port ${PORT}!`);
+  var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'themeatstickthermometer123@gmail.com',
+      pass: process.env.EMAIL_PASS
+    }
   });
-  
+
+  const mailOptions = {
+    from: 'themeatstickthermometer123@gmail.com', // sender address
+    to: 'jdeje002@gmail.com', // Add clients Email
+    subject: 'MEAT STICK SUPPORT', // Subject line
+    html: data // plain text body
+
+  };
+  transporter.sendMail(mailOptions, function (err, info) {
+    if (err)
+      console.log(err)
+    else
+      console.log(info);
+  });
+})
+
+
+
+
+app.listen(PORT, () => {
+  console.log(`🌎 ==> Server now on port ${PORT}!`);
+});
