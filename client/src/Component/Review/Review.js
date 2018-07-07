@@ -14,11 +14,9 @@ class Review extends Component {
 
         event.preventDefault()
 
-
-
         axios.post("/review",{
             name:this.state.name,
-            review:this.state.review,
+            review:this.state.review
             
         }).then(function(res){
             console.log(res)
@@ -58,16 +56,17 @@ class Review extends Component {
                         </div>
                         <div className="input-field  col s4">
                             <textarea
-                                name="message"
-                                id="message"
+                                id="review"
+                                name="review"
                                 type="Text"
                                 className="validate"
                                 minlength="3"
                                 required
-                                placeholder="message"
-                                value={this.state.message}
+                                placeholder="review"
+                                value={this.state.review}
                                 onChange={this.handleInputChange}
-                                rows="10" cols="30" />
+                                rows="10" 
+                                cols="30" />
                             <button
                                 className="btn btn-large btn-register waves-effect waves-light col s2"
                                 type="submit"
