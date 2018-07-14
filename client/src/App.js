@@ -11,6 +11,7 @@ import BBQSet from "./Pages/BBQSet";
 import Support from "./Pages/Support";
 import About from "./Pages/About";
 import Terms from "./Pages/Terms";
+import Cart from "./Pages/Cart";
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
             <Route exact path="/PrivacyPolicy" component = { PrivacyPolicy } />
             <Route exact path="/About" component = { About } />
             <Route exact path="/Terms" component = { Terms } />
+            <Route exact path="/Cart" component = { Cart} />
           </Switch>
         <Footer />
         </div>
