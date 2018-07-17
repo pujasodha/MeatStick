@@ -196,7 +196,7 @@ app.post("/mail", (req, res) => {
 
   const mailOptions = {
     from: 'themeatstickthermometer123@gmail.com', // sender address
-    to: 'jdeje002@gmail.com', // Add clients Email
+    to: 'somalabsllc@gmail.com', // Add clients Email
     subject: 'MEAT STICK SUPPORT', // Subject line
     html: data // plain text body
 
