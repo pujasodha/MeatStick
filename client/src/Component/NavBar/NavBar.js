@@ -12,7 +12,7 @@ const Navbar = props =>
     <li><a className="navText" href="/MeatStick">The MeatStick</a></li>
     <li><a className="navText" href="/WifiBridge">Wifi Bridge</a></li>
     <li><a className="navText" href="/Support">Support</a></li>
-    <li><a className="navText" href="#">Blog</a></li>
+    <li><a className="navText" href="/Blog">Blog</a></li>
   </ul>
   <a href="/Cart"><img  id="bag" src={bag}></img></a>
 </div>
