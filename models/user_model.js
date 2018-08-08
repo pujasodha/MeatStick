@@ -6,12 +6,12 @@ var Schema = mongoose.Schema;
 
 var UserSchema = new Schema({
   
-  name: {
+  subject: {
     type: String,
     required: true
   },
     
-  review: {
+  blog: {
     type: String,
     required: true
   },
