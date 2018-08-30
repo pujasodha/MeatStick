@@ -37,3 +37,49 @@
     top: 180px;
 }
 
+@media only screen and (max-width: 2560px) {
+    .description {
+        left: 1130px;
+    }
+}
+
+@media only screen and (max-width: 1690px) {
+    .description {
+        left: 700px;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    .description {
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .description {
+        left: 370px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .fullImageDiv {
+        height: 500px;
+    }
+    .fullImagePic {
+        height: 140px;
+        width: 400px;
+        margin-top: 25px;
+    }
+    
+    .description {
+        top: 215px;
+        left: 100px;
+        font-size: 20px;
+    }
+    
+    #title {
+        width: 360px;
+        height: 100px;
+        top: 160px;
+    }
+}

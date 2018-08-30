@@ -1,3 +1,12 @@
+#meatStickInfoRow {
+    text-align: left;
+}
+
+#meatstickH1 {
+    margin-bottom: 30px;
+    margin-top: 210px;
+}
+
 .meatstickDescription {
     padding-bottom: 100px;
 }
@@ -5,4 +14,42 @@
 .meatstickP {
     width: 800px;
     margin-left: 450px;
+}
+
+#overviewTitle {
+    margin-top: 230px;
+    margin-left: -10px;
+}
+
+#specsTitle {
+    margin-top: 80px;
+}
+
+#SKU {
+    color: rgb(170, 170, 170);
+    margin-top: -20px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+.meatstickH3 {
+    color: black;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+#specsUl {
+    margin-bottom: 120px;
+}
+
+ul.meatStickUl {
+    margin-left: 30px;
+    padding-left: 5px;
+    /* list-style-type: disc;
+    display: list-item; */
+}
+
+.meatstickLi {
+    left: 0px;
+    margin-bottom: 5px;
 }

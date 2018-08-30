@@ -26,3 +26,23 @@
 #yellow {
     color: #fd9626;
 }
+
+@media only screen and (max-width: 375px) {
+    .fullImagePic2 {
+        height: 550px;
+        width: 550px;
+        margin-top: 110px;
+        margin-left: 50px;
+    }
+    
+    .header {
+        top: 620px;
+        left: 61px;
+        font-size: 60px;
+    }
+    
+    #fullImageDiv2 {
+        margin-bottom: 15px;
+        overflow-x: hidden;
+    }
+}
