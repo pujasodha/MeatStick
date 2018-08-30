@@ -146,15 +146,14 @@ app.get('/shopify/callback', (req, res) => {
 
 
 
-// database 
+// database for blog
 
 
-app.post('/review', (req, res) => {
+app.post('/blog_put', (req, res) => {
   var userData = req.body;
   db.User.create(userData)
   console.log(userData)
-
-    .then(function (userData) {
+  .then(function (userData) {
       console.log(userData)
     })
     .catch(function (err) {
@@ -163,7 +162,7 @@ app.post('/review', (req, res) => {
 }
 )
 // database pull
-app.get("/review_card", (req, res) => {
+app.get("/blog_post", (req, res) => {
   db.User.find()
     .then(function (data) {
       res.json(data)
@@ -196,7 +195,7 @@ app.post("/mail", (req, res) => {
 
   const mailOptions = {
     from: 'themeatstickthermometer123@gmail.com', // sender address
-    to: 'jdeje002@gmail.com', // Add clients Email
+    to: 'somalabsllc@gmail.com', // Add clients Email
     subject: 'MEAT STICK SUPPORT', // Subject line
     html: data // plain text body
 
