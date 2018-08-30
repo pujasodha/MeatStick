@@ -14,22 +14,25 @@
 }
 
 #wifiBridgeNav {
-    left: -760%;
+    left: -360%;
 }
 
 #meatStickNav {
-    left: -630%;
+    left: -300%;
 }
 
 #TheBBQSet{
-    left: -610%;
+    left: -290%;
 }
 
 #overview {
-    left: -310%;
+    margin-left: 100px;
 }
 
 #specs {
-    left: -310%;
     margin-left: 20px;
+}
+
+.subNavList {
+    margin-left: 0;
 }

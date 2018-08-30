@@ -7,6 +7,16 @@
     margin-bottom: 150px;
 }
 
+#bbqSetInfoRow {
+    text-align: left;
+    margin-bottom: 150px;
+}
+
 #firstlinebbq {
     margin-top: -20px;
+    margin-left: 0px;
+}
+
+#bbqSetP {
+    margin-left: 0px;
 }

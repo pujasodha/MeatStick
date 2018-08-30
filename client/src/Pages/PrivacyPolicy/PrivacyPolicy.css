@@ -1,3 +1,29 @@
 .rowDiv {
     display: none;
 }
+
+.privacyDiv {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    text-align: left;
+}
+
+.privacyPolicyH2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#privacyPolicyH1 {
+    text-align: center;
+}
+
+.indent {
+    text-indent: 20px;
+}
+
+ul.privacyPolicyUl {
+    margin-left: 80px;
+    list-style-type: disc;
+    display: list-item;
+    
+}

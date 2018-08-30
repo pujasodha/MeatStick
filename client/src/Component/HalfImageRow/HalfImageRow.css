@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "myfont";
+    src: url("../../Images/fonts/NexaLight.otf")
+}
+
 .halfImagePic {
     height: 600px;
     width: 850px;
@@ -33,6 +38,7 @@
     margin-right: 0px;
     margin-left: 15px;
     margin-bottom: 19px;
+    margin-top: 14px;
 }
 
 .halfDiv {
@@ -44,3 +50,118 @@
     padding: 0px;
 }
 
+@media only screen and (max-width: 2560px) {
+    .halfImagePic {
+        height: 600px;
+        width: 850px;
+    }
+
+    #halfImagePic2 {
+        height: 600px;
+        width: 650px;
+        padding-left: 80px;
+        padding-top: 30px;
+    }
+
+    .halfTitle {
+        position: absolute;
+        margin-left: 200px;
+        text-decoration: none;
+        color: #F8F8F8;
+    }
+
+    #halfTitle2 {
+        margin-left: 280px;
+    }
+
+    .halfImageDiv {
+        margin: 15px;
+    }
+
+    #halfImageDiv2 {
+        margin: 15px;
+        background-color: #696969;
+        width: 830px;
+        height: 600px;
+        margin-right: 0px;
+        margin-left: 15px;
+        margin-bottom: 19px;
+        margin-top: 14px;
+    }
+
+    .halfDiv {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center; 
+        overflow: hidden;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #halfImagePic1 {
+        height: 380px;
+        width: 375px;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    #halfImagePic2 {
+        height: 470px;
+        width: 395px;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 25px;
+    }
+
+    .halfTitle {
+        font-size: 45px;
+    }
+
+    #halfTitle1 {
+        margin-left: 45px;
+        margin-top: 24px;
+    }
+
+    #halfTitle2 {
+        margin-left: 100px;
+        margin-top: 15px;
+    }
+    
+    .halfImageDiv {
+        margin: 0px;
+        width: 375px;
+    }
+
+    .halfImageDiv1 {
+        margin: 0px;
+        width: 375px;
+    }
+    
+    #halfImageDiv2 {
+        margin: 10px;
+        width: 375px;
+        height: 400px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+    .halfDiv {
+        width: 375px;
+    }
+
+    #halfDiv1 {
+        width: 375px;
+    }
+
+    #halfDivRow {
+        width: 375px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}

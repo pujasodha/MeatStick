@@ -15,7 +15,7 @@ class Meatstick extends Component {
         <h1 id="meatstickH1">The Meat<span id="yellow">Stick</span></h1>
         <ProductImage id="ProbePic">{ProbePic}</ProductImage>
 
-        <div className ="row">
+        <div className ="row" id="meatStickInfoRow">
         <div className="col s3"></div>
         <div className="col s6">
           <h2 id="overviewTitle">Overview</h2>
@@ -44,18 +44,18 @@ class Meatstick extends Component {
 
           <h2 id="specsTitle">Specs</h2>
 
-          <ul id="specsUl">
-          <li  className="meatstickLi">A TRUE wireless smart meat thermometer that helps you cook the perfect steak </li>
-          <li  className="meatstickLi">Broadcast its temperature and status continuously via Bluetooth signal to mobile devices</li>
-          <li  className="meatstickLi">Powered by a high-temperature resistant rechargeable battery</li>
-          <li  className="meatstickLi">No wiring required, no installation required</li>
-          <li  className="meatstickLi">Dual Temperature sensors to monitor the meat’s internal and ambient temperature</li>
-          <li  className="meatstickLi">All features controlled from the free companion App on Android and iOS devices</li>
-          <li  className="meatstickLi">Charge the Meat Thermometer battery using the included charger</li>
-          <li  className="meatstickLi">The app can monitor up to 16 MeatSticks simultaneously</li>
-          <li  className="meatstickLi">Select a preferable final meat temperature from the recipes built into the MeatStick App</li>
-          <li  className="meatstickLi">Check remaining battery percentage via app</li>
-          <li  className="meatstickLi">Receive audible, tactile, and/or visual notifications from your smartphone when your meat is ready/almost ready, when abnormal ambient temperatures are detected, and when battery is low </li>
+          <ul id="specsUl" className="meatStickUl">
+            <li className="meatstickLi">• A TRUE wireless smart meat thermometer that helps you cook the perfect steak </li>
+            <li className="meatstickLi">• Broadcast its temperature and status continuously via Bluetooth signal to mobile devices</li>
+            <li className="meatstickLi">• Powered by a high-temperature resistant rechargeable battery</li>
+            <li className="meatstickLi">• No wiring required, no installation required</li>
+            <li className="meatstickLi">• Dual Temperature sensors to monitor the meat’s internal and ambient temperature</li>
+            <li className="meatstickLi">• All features controlled from the free companion App on Android and iOS devices</li>
+            <li className="meatstickLi">• Charge the Meat Thermometer battery using the included charger</li>
+            <li className="meatstickLi">• The app can monitor up to 16 MeatSticks simultaneously</li>
+            <li className="meatstickLi">• Select a preferable final meat temperature from the recipes built into the MeatStick App</li>
+            <li className="meatstickLi">• Check remaining battery percentage via app</li>
+            <li className="meatstickLi">• Receive audible, tactile, and/or visual notifications from your smartphone when your meat is ready/almost ready, when abnormal ambient temperatures are detected, and when battery is low </li>
           </ul>
         </div>
         <div className="col s3"></div>
