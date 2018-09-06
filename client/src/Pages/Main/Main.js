@@ -11,12 +11,12 @@ import Review_card from "../../Component/Review_card/Review_card";
 class Main extends Component {
   render() {
     return (
-      <div className="App">
-     
+      <div>
+
       <Fullimage>{ProbePic}</Fullimage>
       <Fullimage2>{WifiBridge}</Fullimage2>
-      <HalfImageRow></HalfImageRow>   
-     
+      <HalfImageRow></HalfImageRow>
+
       </div>
     );
   }

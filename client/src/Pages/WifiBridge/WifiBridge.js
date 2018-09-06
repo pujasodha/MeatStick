@@ -9,7 +9,7 @@ import "./WifiBridge.css"
 class WifiBridge extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
       <SubNav title="Wifi Bridge" id="wifiBridgeNav"></SubNav>
       <ProductImage id="wifiBridgePic">{ WifiBridgePic }</ProductImage>
       <h1 id="wifiBridgeTitle">The Wifi<span id="yellow">Bridge</span></h1>

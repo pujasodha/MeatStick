@@ -9,7 +9,7 @@ import "./BBQSet.css";
 class BBQSet extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <SubNav title="BBQ Super Set" id="TheBBQSet"></SubNav>
         <h1 id="bbqH1">The Meat<span id="yellow">Stick</span> Ultimate BBQ Set</h1>
         <ProductImage id="BbqSet">{BBQPicLight}</ProductImage>
@@ -43,5 +43,5 @@ class BBQSet extends Component {
         );
       }
     }
-    
+
 export default BBQSet;
