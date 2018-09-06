@@ -1,1 +1,1 @@
-export {default} from "./HalfImageRow";
+export { default } from "./HalfImageRow";

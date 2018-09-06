@@ -20,15 +20,17 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <!-- Import Google Icon Font -->
+  <!-- Import Shopify Styling Library -->
+  <link href="https://sdks.shopifycdn.com/polaris/2.9.0-rc.3/polaris.min.css" rel="stylesheet" />
+  <!-- Import Google Icon Font -->
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Import materialize.css -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet">
 
-    <title>The MeatStick</title>
+  <title>The MeatStick</title>
   </head>
   <body>
-    
+
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
@@ -49,7 +51,7 @@
     <script src="path/to/your/bundle.js"></script>
     <script type="text/javascript">
       /*<![CDATA[*/
-      
+
       // (function () {
       //   var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
       //   if (window.ShopifyBuy) {
@@ -61,7 +63,7 @@
       //   } else {
       //     loadScript();
       //   }
-      
+
       //   function loadScript() {
       //     var script = document.createElement('script');
       //     script.async = true;
@@ -69,14 +71,14 @@
       //     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
       //     script.onload = ShopifyBuyInit;
       //   }
-      
+
       //   function ShopifyBuyInit() {
       //     var client = ShopifyBuy.buildClient({
       //       domain: 'meatstick.myshopify.com',
       //       apiKey: 'b403ab90557a2bc47c77e9cf1d25a750',
       //       appId: '6',
       //     });
-      
+
           ShopifyBuy.UI.onReady(client).then(function (ui) {
             ui.createComponent('product', {
               id: [1113983713395],
@@ -204,11 +206,11 @@
       /*]]>*/
       </script>
 
-      
+
       <!-- // meatstick Them -->
       <script type="text/javascript">
         /*<![CDATA[*/
-        
+
       //   (function () {
       //     var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
       //     if (window.ShopifyBuy) {
@@ -220,7 +222,7 @@
       //     } else {
       //       loadScript();
       //     }
-        
+
       //     function loadScript() {
       //       var script = document.createElement('script');
       //       script.async = true;
@@ -228,14 +230,14 @@
       //       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
       //       script.onload = ShopifyBuyInit;
       //     }
-        
+
       //     function ShopifyBuyInit() {
       //       var client = ShopifyBuy.buildClient({
       //         domain: 'meatstick.myshopify.com',
       //         apiKey: 'b403ab90557a2bc47c77e9cf1d25a750',
       //         appId: '6',
       //       });
-        
+
       //       ShopifyBuy.UI.onReady(client).then(function (ui) {
       //         ui.createComponent('product', {
       //           id: [1114032472179],
