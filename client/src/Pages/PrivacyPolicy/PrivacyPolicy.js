@@ -219,14 +219,14 @@ class PrivacyPolicy extends Component {
             </p>
 
             <h2 className="privacyPolicyH2">Questions and Feedback:</h2>
-            <p class="center">
+            <p className="center">
               We welcome your questions, comments, and concerns about privacy.
               Please send us any and all feedback pertaining to privacy, or any
               other issue.
             </p>
 
             <h2 className="privacyPolicyH2">Notice and Contact Information:</h2>
-            <p class="center">
+            <p className="center">
               For questions or concerns, please email us or contact us at:
               info@themeatstick.com.
             </p>

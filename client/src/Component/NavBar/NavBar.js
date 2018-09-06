@@ -12,10 +12,10 @@ const Navbar = props => (
       <a
         href="#"
         data-target="mobile-demo"
-        class="sidenav-trigger"
+        className="sidenav-trigger"
         id="hamburger"
       >
-        <i class="material-icons">menu</i>
+        <i className="material-icons">menu</i>
       </a>
       <ul id="nav-mobile" className="hide-on-med-and-down">
         <li className="navbarlist">
