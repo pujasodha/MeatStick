@@ -1,1 +1,1 @@
-export {default} from "./Fullimage";
+export { default } from "./Fullimage";

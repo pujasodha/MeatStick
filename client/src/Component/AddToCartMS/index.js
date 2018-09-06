@@ -1,1 +1,1 @@
-export {default} from "./AddToCartMS";
+export { default } from "./AddToCartMS";

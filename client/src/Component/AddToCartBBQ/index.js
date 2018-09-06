@@ -1,1 +1,1 @@
-export {default} from "./AddToCartBBQ";
+export { default } from "./AddToCartBBQ";
